@@ -18,7 +18,7 @@ module.exports = {
         var update = 'devoured = ' + property;
         var condition = 'id = ' + selector;
 
-        orm.updateOne('burgers', updatee, condition, function(data) {
+        orm.updateOne('burgers', update, condition, function(data) {
             callback(data);
         })
     }
