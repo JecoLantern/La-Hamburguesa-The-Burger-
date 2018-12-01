@@ -7,7 +7,7 @@ module.exports = {
         connection.query(queryString, [table, orderBy, direction], function(err,data) {
             if (err) {
                 return console.log(err);
-            }else{
+            } else {
                 return callback(data);
             }
         });
@@ -17,7 +17,7 @@ module.exports = {
         connection.query(queryString, function(err, data) {
             if (err) {
                 return console.log(err);
-            }else{
+            } else {
                 return callback(data);
             }
         });
@@ -27,7 +27,7 @@ module.exports = {
         connection.query(queryString, function(err, data) {
             if (err) {
                 return console.log(err);
-            }else {
+            } else {
                 return callback(data);
             }
         });
